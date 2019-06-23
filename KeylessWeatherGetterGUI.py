@@ -40,7 +40,7 @@ while True:
             r = requests.get(url)
             info = json.loads(r.text)
             direction = str(compass(info['currently']['windBearing']))
-            sg.Popup('Current weather: '+str(info['currently']['summary'])+' and '+str(round((info['currently']['temperature']), 2))+'°F.',
+            sg.Popup('Current weather: '+str(info['currently']['summary'])+', '+str(round((info['currently']['temperature']), 2))+'°F.',
                      'It feels like '+str(round((info['currently']['apparentTemperature']), 2))+'°F'+' with '+str(round((info['currently']['humidity']*100), 2))+'% Humidity.',
                      'There is '+str(round((info['currently']['precipProbability']*100), 2))+'% chance of rain.',
                      'There is '+str(round((info['currently']['cloudCover']*100), 2))+'%'+' cloud cover'+' with '+str(round((info['currently']['visibility']), 2))+' miles of visibility.',
