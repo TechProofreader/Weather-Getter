@@ -12,8 +12,8 @@ menu_def = [['File', ['About']]
             ]
      
 layout = [ [sg.Menu(menu_def, tearoff=False)],
-           [sg.Txt('Enter a city, state, zip code, or country to get the current weather', font=("Noteworthy", 20), text_color='#f4d1ab', background_color='#ad9b88')],      
-           [sg.In(size=(83, 1), key='address', justification="left")],              
+           [sg.Txt('Enter a location to get the current weather', font=("Noteworthy", 20), text_color='#f4d1ab', background_color='#ad9b88')],      
+           [sg.In(size=(53, 1), key='address', justification="left")],              
            [sg.Button('Get my weather!', bind_return_key=True, font=("Noteworthy", 18))]]   
      
 window = sg.Window('Weather Getter, powered by Dark Sky', layout, background_color='#ad9b88')      
