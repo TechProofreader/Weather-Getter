@@ -1,5 +1,7 @@
 # Weather-Getter
 
+_Note: This is a Beginner Level program that you can use to further your Python knowledge by first learning how the base program works, and then extending the program with your own additions._
+
 ![](https://raw.githubusercontent.com/TechProofreader/Weather-Getter/master/WeatherGetterMainScreen.png)
 ![](https://raw.githubusercontent.com/TechProofreader/Weather-Getter/master/WeatherGetterOutputScreen.png)
 
